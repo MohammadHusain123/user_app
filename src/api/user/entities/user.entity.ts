@@ -13,7 +13,7 @@ export class User {
     @Column({ type: 'varchar', length: 20, nullable: false })
     last_name: string
 
-    @Column({ type: 'varchar', nullable: false, unique: true, length: 40 })
+    @Column({ type: 'varchar', nullable: false, unique: true, length: 100 })
     email: string
 
     @Column({ type: 'varchar', nullable: false, unique: true, length: 256 })
@@ -25,8 +25,11 @@ export class User {
     @Column({ type: 'varchar', length: 256, nullable: true, default: null })
     reset_password_token: string
 
-    @Column({ type: 'varchar', length: 256, nullable: true, default: null })
+    @Column({ type: 'timestamp', nullable: true, default: null })
     reset_password_token_expire_time: Date
+
+    @Column({ type: 'boolean', nullable: false, default: 1 })
+    is_active: boolean
 
     @CreateDateColumn()
     created_at: Date
