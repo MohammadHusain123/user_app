@@ -71,3 +71,21 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+<!-- project setup -->
+
+#username: 'root',
+#password: 'root',
+#database: 'user_app',
+
+run migration:
+
+#npm run migration:run
+
+<!-- env setup -->
+EMAIL_SERVICE="gmail"
+EMAIL_USERNAME=""
+EMAIL_PASSWORD=""
+
+
